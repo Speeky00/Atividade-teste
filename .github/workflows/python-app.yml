@@ -21,7 +21,7 @@ jobs:
         pip install -r requirements.txt
     - name: Run tests
       run: |
-        python -m unittest test_saltotemporal.py
+        python -m unittest test_salto.py
     - name: Package project
       run: zip -r saltotemporal.zip .
     - name: Upload artifact
