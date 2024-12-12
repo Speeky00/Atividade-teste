@@ -21,11 +21,11 @@ jobs:
         pip install -r requirements.txt
     - name: Run tests
       run: |
-        python -m unittest test_calculadora.py
+        python -m unittest test_saltotemporal.py
     - name: Package project
-      run: zip -r calculadora.zip .
+      run: zip -r saltotemporal.zip .
     - name: Upload artifact
       uses: actions/upload-artifact@v3
       with:
-        name: calculadora-artifact
-        path: calculadora.zip
+        name: saltotemporal-artifact
+        path: saltotemporal.zip
